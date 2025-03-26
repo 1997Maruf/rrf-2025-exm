@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- sliock -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <!-- jQuery (Required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <!-- sliock -->
+  </head>
+  <script>
+    $(document).ready(function () {
+      $(".your-slider").slick({
+        // dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        arrows: true,
+        prevArrow: "<span><</span>",
+        nextArrow: "<span class='next-arrow'>></span>",
+        // responsive: [
+        //   {
+        //     breakpoint: 1024,
+        //     settings: {
+        //       slidesToShow: 2
+        //     }
+        //   },
+        //   {
+        //     breakpoint: 600,
+        //     settings: {
+        //       slidesToShow: 1
+        //     }
+        //   }
+        // ]
+      });
+    });
+  </script>
+  <body>
+    <!-- <header class="bg-white">
+      <div
+        class="container bg-[#ffd4d0] mx-auto flex justify-between items-center pt-4 px-10"
+      >
+        <a href=""><img src="./img/header-Logo.png" alt="" /></a>
+        <nav class="space-x-6">
+          <a href="#" class="text-gray-700 hover:text-black">About</a>
+          <a href="#" class="text-gray-700 hover:text-black">Services</a>
+          <a href="#" class="text-gray-700 hover:text-black">Portfolio</a>
+          <a href="#" class="text-gray-700 hover:text-black">Blog</a>
+        </nav>
+        <button class="bg-black text-white px-4 py-2 rounded">
+          Let's Talk
+        </button>
+      </div>
+    </header> -->
+    <header class="bg-[#ffd4d0]">
+      <div class="container">
+        <div class="flex justify-between items-center mx-auto px-24 py-4">
+          <a href=""><img src="./img//header-Logo.png" alt="" /></a>
+          <nav
+            class="flex gap-[32px] text-[18px] font-bold text-[#1f1f1f] relative z-1"
+          >
+            <img
+              class="absolute z-[-1] -ml-[90px] -mt-6"
+              src="./img/Background.png"
+              alt=""
+            />
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Portfolio</a>
+            <a href="">Blog</a>
+          </nav>
+          <button
+            class="text-[16px] font-bold px-4 py-2 bg-black hover:border-[2px] hover:border-black text-white hover:bg-[#ffd4d0] hover:text-black"
+          >
+            Let’s Talk
+          </button>
+        </div>
+        <div class="hero-section mx-24">
+          <div class="flex justify-between">
+            <div class="w-1/2 mt-10">
+              <p class="text-[20px] font-normal mb-6 mt-8">UX Designer</p>
+              <h2 class="text-[48px] font-bold w-[400px]">
+                Hi There, I’m <span class="text-[#fc3314]">John Smith</span>
+              </h2>
+              <div class="text-[16px] font-normal mt-8">
+                Welcome to my portfolio of captivating digital<br />
+                experiences. Explore my work and let's create something<br />
+                extraordinary together.
+              </div>
+              <div class="flex gap-8 mt-8 pb-8">
+                <button
+                  class="text-[16px] font-bold px-4 py-2 bg-black hover:border-[2px] border-[1px] border-black hover:border-black text-white hover:bg-[#ffd4d0] hover:text-black"
+                >
+                  Hire Me
+                </button>
+                <button
+                  class="text-[16px] font-bold px-4 py-2 hover:border-[1px] border-[2px] border-black hover:border-black hover:text-white hover:bg-black"
+                >
+                  Portfolio
+                </button>
+              </div>
+            </div>
+            <div class="w-1/2 mt-[102px]">
+              <img class="" src="./img/man.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-black">
+      <div class="container">
+        <h2 class="text-[36px] font-bold text-center text-white pt-16">
+          About Me
+        </h2>
+        <p
+          class="text-[16px] font-normal text-white mx-auto text-center w-[750px] mt-6"
+        >
+          I'm John Smith, a UI/UX designer dedicated to crafting intuitive and
+          visually stunning digital experiences. With a passion for user-centric
+          design, I transform ideas into functional and beautiful interfaces.
+          Let's collaborate and shape the future of design together.
+        </p>
+        <div class="mx-36 flex justify-between mt-8 items-center">
+          <div>
+            <h2 class="text-[64px] font-bold text-center text-[#ffd4d0]">
+              502
+            </h2>
+            <p class="text-[18px] font-bold text-center text-white">
+              Projects Done
+            </p>
+          </div>
+          <div>
+            <h2 class="text-[64px] font-bold text-center text-[#ffd4d0]">
+              10+
+            </h2>
+            <p class="text-[18px] font-bold text-center text-white">
+              Years of Experience
+            </p>
+          </div>
+          <div>
+            <h2 class="text-[64px] font-bold text-center text-[#ffd4d0]">
+              273+
+            </h2>
+            <p class="text-[18px] font-bold text-center text-white">
+              Clients Served
+            </p>
+          </div>
+        </div>
+        <img class="mx-auto mt-10" src="./img/Background (4).png" alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="container">
+        <h2 class="text-[36px] font-bold text-center pt-16">Services</h2>
+        <p class="text-[16px] font-normal text-center w-[750px] mx-auto mt-6">
+          Explore my design services, from user interface and experience to
+          prototyping and testing. Let's craft exceptional digital experiences
+          together.
+        </p>
+        <div class="flex justify-center gap-12 items-center mx-24 mt-12 pb-12">
+          <div class="">
+            <img class="mb-4" src="./img/Vector.png" alt="" />
+            <h3 class="text-[18px] mb-4 font-bold">Design</h3>
+            <p class="text-[14px] font-normal">
+              I specialize in web development and design, creating visually
+              appealing, user-friendly digital experiences.
+            </p>
+          </div>
+          <div class="">
+            <img class="mb-4" src="./img/Vector (1).png" alt="" />
+            <h3 class="text-[18px] mb-4 font-bold">Design</h3>
+            <p class="text-[14px] font-normal">
+              I specialize in web development and design, creating visually
+              appealing, user-friendly digital experiences.
+            </p>
+          </div>
+          <div class="">
+            <img class="mb-4" src="./img/Vector.svg" alt="" />
+            <h3 class="text-[18px] mb-4 font-bold">Design</h3>
+            <p class="text-[14px] font-normal">
+              I specialize in web development and design, creating visually
+              appealing, user-friendly digital experiences.
+            </p>
+          </div>
+          <div class="">
+            <img class="mb-4" src="./img/Vector (2).png" alt="" />
+            <h3 class="text-[18px] mb-4 font-bold">Design</h3>
+            <p class="text-[14px] font-normal">
+              I specialize in web development and design, creating visually
+              appealing, user-friendly digital experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-[#ffd4d0] h-80">
+      <h2 class="text-[35px] font-bold text-center pt-16">My Portfolio</h2>
+      <p class="text-[16px] font-normal text-center w-[750px] mx-auto mt-6">
+        Explore my design services, from user interface and experience to
+        prototyping and testing. Let's craft exceptional digital experiences
+        together.
+      </p>
+    </div>
+    <div class="grid gap-8 grid-cols-3 mx-24">
+      <div class="-mt-24 mb-5">
+        <img src="./img/Image (1).png" alt="" />
+        <h3 class="text-[20px] font-bold mt-6">Educational Platform</h3>
+        <div class="flex justify-between items-center">
+          <p class="text-[14] font-normal mt-3">
+            Web Design / Usability Testing
+          </p>
+          <i
+            class="fa-solid bg-[#fc3314] rounded-full text-white px-2 py-2 -rotate-45 fa-arrow-right"
+          ></i>
+        </div>
+      </div>
+      <div class="-mt-24">
+        <img src="./img/Image (2).png" alt="" />
+        <h3 class="text-[20px] font-bold mt-6">Educational Platform</h3>
+        <div class="flex justify-between items-center">
+          <p class="text-[14] font-normal mt-3">
+            Web Design / Usability Testing
+          </p>
+          <i
+            class="fa-solid bg-[#fc3314] rounded-full text-white px-2 py-2 -rotate-45 fa-arrow-right"
+          ></i>
+        </div>
+      </div>
+      <div class="-mt-24">
+        <img src="./img/Image (3).png" alt="" />
+        <h3 class="text-[20px] font-bold mt-6">Educational Platform</h3>
+        <div class="flex justify-between items-center">
+          <p class="text-[14] font-normal mt-3">
+            Web Design / Usability Testing
+          </p>
+          <i
+            class="fa-solid bg-[#fc3314] rounded-full text-white px-2 py-2 -rotate-45 fa-arrow-right"
+          ></i>
+        </div>
+      </div>
+      <div>
+        <img src="./img/Image (4).png" alt="" />
+        <h3 class="text-[20px] font-bold mt-6">Educational Platform</h3>
+        <div class="flex justify-between items-center">
+          <p class="text-[14] font-normal mt-3">
+            Web Design / Usability Testing
+          </p>
+          <i
+            class="fa-solid bg-[#fc3314] rounded-full text-white px-2 py-2 -rotate-45 fa-arrow-right"
+          ></i>
+        </div>
+      </div>
+      <div>
+        <img src="./img/Image (5).png" alt="" />
+        <h3 class="text-[20px] font-bold mt-6">Educational Platform</h3>
+        <div class="flex justify-between items-center">
+          <p class="text-[14] font-normal mt-3">
+            Web Design / Usability Testing
+          </p>
+          <i
+            class="fa-solid bg-[#fc3314] rounded-full text-white px-2 py-2 -rotate-45 fa-arrow-right"
+          ></i>
+        </div>
+      </div>
+      <div>
+        <img src="./img/Image (6).png" alt="" />
+        <h3 class="text-[20px] font-bold mt-6">Educational Platform</h3>
+        <div class="flex justify-between items-center">
+          <p class="text-[14] font-normal mt-3">
+            Web Design / Usability Testing
+          </p>
+          <i
+            class="fa-solid bg-[#fc3314] rounded-full text-white px-2 py-2 -rotate-45 fa-arrow-right"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="text-[35px] font-bold text-center pt-32">
+        Core Design Skills
+      </h2>
+      <p class="text-[16px] font-normal text-center w-[850px] mx-auto mt-6">
+        I excel in essential design skills, creating visually stunning and
+        functional digital experiences. From UI design to UX research, my
+        passion is to craft effective and memorable digital solutions.
+      </p>
+      <div class="px-24 pb-28 mt-20">
+        <div class="flex gap-10">
+          <div class="w-full">
+            <label class="text-[16px] font-bold">Interaction Design</label>
+            <div
+              class="flex justify-between items-center mb-4 mt-4 w-full gap-3"
+            >
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-black h-2.5 rounded-full"
+                  style="width: 45%"
+                ></div>
+              </div>
+              <p>34%</p>
+            </div>
+          </div>
+          <div class="w-full">
+            <label class="text-[16px] font-bold">Figma</label>
+            <div
+              class="flex justify-between items-center mb-4 mt-4 w-full gap-3"
+            >
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-black h-2.5 rounded-full"
+                  style="width: 45%"
+                ></div>
+              </div>
+              <p>34%</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-10">
+          <div class="w-full">
+            <label class="text-[16px] font-bold">Usability Testing</label>
+            <div
+              class="flex justify-between items-center mb-4 mt-4 w-full gap-3"
+            >
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-black h-2.5 rounded-full"
+                  style="width: 45%"
+                ></div>
+              </div>
+              <p>34%</p>
+            </div>
+          </div>
+          <div class="w-full">
+            <label class="text-[16px] font-bold">Prototyping</label>
+            <div
+              class="flex justify-between items-center mb-4 mt-4 w-full gap-3"
+            >
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-black h-2.5 rounded-full"
+                  style="width: 45%"
+                ></div>
+              </div>
+              <p>34%</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-10">
+          <div class="w-full">
+            <label class="text-[16px] font-bold">User Research</label>
+            <div
+              class="flex justify-between items-center mb-4 mt-4 w-full gap-3"
+            >
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-black h-2.5 rounded-full"
+                  style="width: 45%"
+                ></div>
+              </div>
+              <p>34%</p>
+            </div>
+          </div>
+          <div class="w-full">
+            <label class="text-[16px] font-bold"
+              >Information Architecture</label
+            >
+            <d
+              iv
+              class="flex justify-between items-center mb-4 mt-4 w-full gap-3"
+            >
+              <div
+                class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-black h-2.5 rounded-full"
+                  style="width: 45%"
+                ></div>
+              </div>
+              <p>34%</p>
+            </d>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#ffd4d0] pb-16">
+      <img class="mx-auto" src="./img/Background.png" alt="" />
+      <div class="container">
+        <div class="your-slider mx-24">
+          <div>
+            <h2 class="text-[36px] font-bold text-center mt-6">Testemonials</h2>
+            <p
+              class="text-[16px] text-center font-normal my-8 mx-auto w-[730px]"
+            >
+              Sara Jones's designs are both visually captivating and highly
+              effective. She transformed our website, enhancing user engagement
+              and conversions. Her attention to detail and creative approach are
+              top-notch. Highly recommended!
+            </p>
+            <div class="flex justify-center items-center gap-4">
+              <img class="w-20 h-20" src="./img/Image (7).png" alt="" />
+              <h4 class="texr-[16px] font-bold">
+                John Smith <span class="font-normal">/ CEO of XYZ Company</span>
+              </h4>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2 class="text-[36px] font-bold text-center mt-6">
+                Testemonials
+              </h2>
+              <p
+                class="text-[16px] text-center font-normal my-8 mx-auto w-[730px]"
+              >
+                Sara Jones's designs are both visually captivating and highly
+                effective. She transformed our website, enhancing user
+                engagement and conversions. Her attention to detail and creative
+                approach are top-notch. Highly recommended!
+              </p>
+              <div class="flex justify-center items-center gap-4">
+                <img class="w-20 h-20" src="./img/Image (7).png" alt="" />
+                <h4 class="texr-[16px] font-bold">
+                  John Smith
+                  <span class="font-normal">/ CEO of XYZ Company</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2 class="text-[36px] font-bold text-center mt-6">
+                Testemonials
+              </h2>
+              <p
+                class="text-[16px] text-center font-normal my-8 mx-auto w-[730px]"
+              >
+                Sara Jones's designs are both visually captivating and highly
+                effective. She transformed our website, enhancing user
+                engagement and conversions. Her attention to detail and creative
+                approach are top-notch. Highly recommended!
+              </p>
+              <div class="flex justify-center items-center gap-4">
+                <img class="w-20 h-20" src="./img/Image (7).png" alt="" />
+                <h4 class="texr-[16px] font-bold">
+                  John Smith
+                  <span class="font-normal">/ CEO of XYZ Company</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2 class="text-[36px] font-bold text-center mt-6">
+                Testemonials
+              </h2>
+              <p
+                class="text-[16px] text-center font-normal my-8 mx-auto w-[730px]"
+              >
+                Sara Jones's designs are both visually captivating and highly
+                effective. She transformed our website, enhancing user
+                engagement and conversions. Her attention to detail and creative
+                approach are top-notch. Highly recommended!
+              </p>
+              <div class="flex justify-center items-center gap-4">
+                <img class="w-20 h-20" src="./img/Image (7).png" alt="" />
+                <h4 class="texr-[16px] font-bold">
+                  John Smith
+                  <span class="font-normal">/ CEO of XYZ Company</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Design Insights and Inspiration -->
+    <div class="bg-[#f7f7f7]">
+      <div class="container">
+        <h2 class="text-[35px] font-bold text-center pt-20">
+          Core Design Skills
+        </h2>
+        <p class="text-[16px] font-normal text-center w-[800px] mx-auto mt-6">
+          Discover industry insights, expert tips, and design inspiration. Stay
+          updated with the latest trends in web design and user experience.
+        </p>
+        <div class="flex items-center justify-center mt-11 pb-24 mx-24 gap-16">
+          <div class="bg-white ">
+            <img src="./img/Image (8).png" alt="" />
+            <div class="pl-3 py-3">
+              <p class="mt-4 text-[12px] font-normal ">August 15, 2023 / UX</p>
+              <h4 class="text-[15px] my-3 font-bold">
+                Typography Tips for Design Success
+              </h4>
+              <p class="text[14px] font-normal">
+                Dive into the world of web typography and discover how to choose,
+                pair, and optimize fonts for compelling and readable digital
+                designs.
+              </p>
+              <a href="" class="flex mt-2 items-center gap-2">
+                <p class="text-[12px]  font-bold">Read More</p>
+                <p> > </p>
+              </a>
+            </div>
+          </div>
+          <div class="bg-white">
+            <img src="./img/Image (9).png" alt="" />
+            <div class="pl-3 py-3">
+              <p class="mt-4 text-[12px] font-normal ">August 15, 2023 / UX</p>
+              <h4 class="text-[15px] my-3 font-bold">
+                Typography Tips for Design Success
+              </h4>
+              <p class="text[14px] font-normal">
+                Dive into the world of web typography and discover how to choose,
+                pair, and optimize fonts for compelling and readable digital
+                designs.
+              </p>
+              <div >
+                <a href="" class="flex mt-2 items-center gap-2">
+                  <p class="text-[12px]  font-bold">Read More</p>
+                  <p> > </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white ">
+            <img src="./img/Image (10).png" alt="" />
+            <div class="pl-3 py-3">
+              <p class="mt-4 text-[12px] font-normal ">August 15, 2023 / UX</p>
+              <h4 class="text-[15px] my-3 font-bold">
+                Typography Tips for Design Success
+              </h4>
+              <p class="text[14px] font-normal">
+                Dive into the world of web typography and discover how to choose,
+                pair, and optimize fonts for compelling and readable digital
+                designs.
+              </p>
+              <a href="" class="flex mt-2  items-center gap-2">
+                <p class="text-[12px]  font-bold">Read More</p>
+                  <p> > </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+
+     <div class="bg-[#ffd4d0] pb-28 relative">
+      <img class="absolute mt-[15%]" src="./img/Background (1).png" alt="">
+       <div class="container">
+         <div class="flex items-center justify-center gap-20 mx-24 pt-24">
+          <div>
+              <h2 class="text-[25px] font-bold mb-4">Get in Touch</h2>
+              <p class="text-[16px] font-normal">Have a question or a project in mind? I'd love to hear from you. Let's chat and make something amazing together.</p>
+              <div class="flex items-center mt-10 gap-5">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>+1205 5872 321</p>
+              </div>
+              <div class="flex my-4 items-center gap-5">
+                <i class="fa-solid fa-envelope"></i>
+                <p> contact@sarajonesdesign.com</p>
+              </div>
+              <div class="flex items-center gap-5">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>1234 Design Street,Creativeville, Webland,Imaginary State, 98765</p>
+              </div>
+              <div class="flex items-center gap-5 mt-20">
+                <a href=""><i class="fa-brands bg-white p-2 rounded-full fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram bg-white p-2 rounded-full"></i></a>
+                <a href=""><i class="fa-solid fa-globe bg-white p-2 rounded-full"></i></a>
+               <a href=""> <i class="fa-brands fa-facebook-f bg-white px-3 py-2 rounded-full"></i></a>
+              </div>
+            </div>
+          <div>
+            <form action="/action_page.php">
+            <input class="w-full bg-white py-2 pl-4" type="text" placeholder="Name">
+            <input class="w-full bg-white mt-4 py-2 pl-4" type="email" placeholder="Email">
+            <input class="w-full bg-white mt-4 py-2 pl-4" type="number" placeholder="Phone number">
+            <textarea class="w-full h-48 bg-white mt-4 pl-4 pt-4" placeholder="Your message" name="Your message" id=""></textarea>
+            <button class="bg-black text-white text-center py-3 px-6 mt-6 text-[16px] font-bold"  value="">Send Message</button>
+          </form> 
+          </div>
+         </div>
+       </div>
+     </div>
+
+     <footer class="bg-black pb-20 pt-20">
+       <div class="container">
+        <div class="">
+           <div class="flex justify-center items-center gap-20">
+            <div class="flex gap-4 items-center">
+              <a class="text-[16px] font-medium text-white" href="">About</a>
+              <a class="text-[16px] font-medium text-white" href="">Services</a>
+            </div>
+            <div class="">
+              <img src="./img/footer-logo.png" alt="">
+            </div>
+            <div class="flex gap-4 items-center">
+              <a class="text-[16px] font-medium text-white" href="">About</a>
+              <a class="text-[16px] font-medium text-white" href="">Services</a>
+            </div>
+           </div>
+        </div>
+       </div>
+       <p class="text-[16px] font-normal text-white text-center mt-16">Follow me on social media:</p>
+       <div class="flex justify-center items-center gap-5 mt-6">
+        
+        <a href=""><i class="fa-brands fa-instagram text-white p-2 rounded-full"></i></a>
+        <a href=""><i class="fa-solid fa-globe text-white p-2 rounded-full"></i></a>
+       <a href=""> <i class="fa-brands fa-facebook-f text-white px-3 py-2 rounded-full"></i></a>
+      </div>
+     </footer>
+  </body>
+</html>

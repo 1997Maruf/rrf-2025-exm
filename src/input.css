@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+ body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100 – 900;
+    font-style: normal;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    margin-top: -12px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    juatify-content: center;
+  }
+  .slick-arrow.next-arrow{
+    left: auto;
+    right: -30px;
+  }
